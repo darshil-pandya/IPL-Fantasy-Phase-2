@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { cpSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { defineConfig, type Plugin } from "vite";
+import { defineConfig, type Plugin } from "vitest/config";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 
@@ -30,5 +30,9 @@ export default defineConfig({
   build: {
     outDir: `dist/${REPO}`,
     emptyOutDir: true,
+  },
+  test: {
+    environment: "node",
+    include: ["src/**/*.test.ts"],
   },
 });

@@ -43,7 +43,7 @@ export async function subscribeWaiverRemote(
 }
 
 /** Firestore rejects `undefined` anywhere in the tree; JSON round-trip drops those keys. */
-function stripUndefinedForFirestore<T>(value: T): T {
+export function stripUndefinedForFirestore<T>(value: T): T {
   if (value === undefined) return value;
   try {
     return JSON.parse(JSON.stringify(value)) as T;

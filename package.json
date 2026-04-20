@@ -15,7 +15,8 @@
     "reset:player-fantasy-json": "node scripts/reset-player-fantasy-json.mjs",
     "firestore:clear-match-scores": "npx firebase-tools@13 firestore:delete iplFantasy/fantasyMatchScores -f --project ipl-fantasy-phase-2",
     "backfill:dry-run-april2026": "npx tsx scripts/dryRunBackfillApril2026.ts",
-    "export:match-sheets": "tsx scripts/exportFirestoreMatchSheets.ts"
+    "export:match-sheets": "tsx scripts/exportFirestoreMatchSheets.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "firebase": "^11.6.0",
@@ -33,6 +34,7 @@
     "gh-pages": "^6.3.0",
     "tsx": "^4.21.0",
     "typescript": "~5.8.3",
-    "vite": "^6.3.4"
+    "vite": "^6.3.4",
+    "vitest": "^3.2.4"
   }
 }

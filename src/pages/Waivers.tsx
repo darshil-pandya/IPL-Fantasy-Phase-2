@@ -24,7 +24,10 @@ import {
   callResetLeagueToAuctionBaseline,
 } from "../lib/firebase/waiverApi";
 import { seedLeagueFromStaticToFirestore } from "../lib/firebase/leagueRemote";
+import { commitMidSeasonAuctionToFirestore } from "../lib/firebase/midSeasonAuctionCommit";
 import { loadCompletedTransfers } from "../lib/firebase/waiverRemote";
+import { validateMidSeasonAuctionCsv } from "../lib/csv/midSeasonAuctionCsv";
+import { applyMidSeasonAuctionToState } from "../lib/waiver/midSeasonAuctionApply";
 import { abbreviateMatchLabel, formatMatchDate } from "../lib/matchLabel";
 import type { MatchColumn } from "../lib/matchColumns";
 import { ownerCardClass, ownerCardMutedClass } from "../lib/ownerTheme";
@@ -481,7 +484,9 @@ function AdminPanel({
   setRevealEffectiveColumnIdOverride: (columnId: string | null) => void;
   onRevealRound: () => Promise<void>;
 }) {
-  const { leagueBundleOrigin, leagueFirestoreIsCanonical, leagueNotice } = useLeague();
+  const { bundle, leagueBundleOrigin, leagueFirestoreIsCanonical, leagueNotice } =
+    useLeague();
+  const { state } = useWaiver();
   const [pubBusy, setPubBusy] = useState(false);
   const [revealBusy, setRevealBusy] = useState(false);
   const [pubFeedback, setPubFeedback] = useState<{
@@ -499,6 +504,81 @@ function AdminPanel({
     kind: "ok" | "err";
     text: string;
   } | null>(null);
+
+  const [csvFileName, setCsvFileName] = useState<string | null>(null);
+  const [csvErrors, setCsvErrors] = useState<string[] | null>(null);
+  const [csvReady, setCsvReady] = useState(false);
+  const [csvText, setCsvText] = useState<string | null>(null);
+  const [midBusy, setMidBusy] = useState(false);
+  const [midFeedback, setMidFeedback] = useState<{
+    kind: "ok" | "err";
+    text: string;
+  } | null>(null);
+
+  const midSeasonBlockedReason =
+    state.phase !== "idle"
+      ? "Waiver phase must be idle."
+      : state.nominations.length > 0 || state.bids.length > 0
+        ? "Clear nominations and bids first."
+        : !isFirebaseConfigured()
+          ? "Firebase is not configured in this build."
+          : null;
+
+  async function onMidSeasonCsvSelected(file: File | null) {
+    setCsvErrors(null);
+    setCsvReady(false);
+    setCsvText(null);
+    setMidFeedback(null);
+    if (!file || !bundle) {
+      setCsvFileName(null);
+      return;
+    }
+    setCsvFileName(file.name);
+    const text = await file.text();
+    setCsvText(text);
+    const v = validateMidSeasonAuctionCsv(text, bundle);
+    if (!v.ok) {
+      setCsvErrors(v.errors);
+      return;
+    }
+    setCsvReady(true);
+  }
+
+  async function applyMidSeasonCsv() {
+    if (!bundle || !csvText) return;
+    const v = validateMidSeasonAuctionCsv(csvText, bundle);
+    if (!v.ok) {
+      setCsvErrors(v.errors);
+      return;
+    }
+    setMidBusy(true);
+    setMidFeedback(null);
+    try {
+      const applied = applyMidSeasonAuctionToState(bundle, state, v.rows);
+      if (!applied.ok) {
+        setMidFeedback({ kind: "err", text: applied.error });
+        return;
+      }
+      await commitMidSeasonAuctionToFirestore(
+        applied.leagueBundle,
+        applied.waiverState,
+      );
+      setMidFeedback({
+        kind: "ok",
+        text: "Mid-season rosters written to Firestore. Other tabs will update automatically.",
+      });
+      setCsvReady(false);
+      setCsvText(null);
+      setCsvFileName(null);
+    } catch (e) {
+      setMidFeedback({
+        kind: "err",
+        text: e instanceof Error ? e.message : String(e),
+      });
+    } finally {
+      setMidBusy(false);
+    }
+  }
 
   async function publishLeagueToFirestore() {
     if (!isFirebaseConfigured()) return;
@@ -662,6 +742,83 @@ function AdminPanel({
           {pubFeedback.text}
         </p>
       )}
+
+      <div className="mt-6 rounded-xl border border-cyan-500/35 bg-cyan-950/20 p-4">
+        <h4 className="text-xs font-bold uppercase tracking-wide text-cyan-200">
+          Mid-season auction (CSV)
+        </h4>
+        <p className="mt-2 text-[11px] leading-relaxed text-amber-900/90">
+          Upload a CSV with header{" "}
+          <code className="rounded bg-white/80 px-1 text-[0.65rem] text-slate-900">
+            player_id,name,role,ipl_team,nationality,franchise_owner
+          </code>
+          — exactly <strong className="text-amber-950">105</strong> data rows (7×15). Waiver budgets
+          are kept; waiver phase must be idle. See{" "}
+          <span className="font-medium text-amber-950">docs/mid-season-auction-csv-import-spec.md</span>.
+        </p>
+        {midSeasonBlockedReason && (
+          <p className="mt-2 text-xs font-medium text-amber-800">
+            Import blocked: {midSeasonBlockedReason}
+          </p>
+        )}
+        <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
+          <label className="inline-flex cursor-pointer items-center gap-2 rounded-lg border border-cyan-500/40 bg-slate-950/40 px-3 py-2 text-xs font-semibold text-cyan-100 hover:bg-slate-900/60">
+            <input
+              type="file"
+              accept=".csv,text/csv"
+              className="sr-only"
+              disabled={Boolean(midSeasonBlockedReason) || midBusy}
+              onChange={(e) => {
+                const f = e.target.files?.[0] ?? null;
+                void onMidSeasonCsvSelected(f);
+                e.target.value = "";
+              }}
+            />
+            Choose CSV
+          </label>
+          {csvFileName ? (
+            <span className="text-xs text-slate-600">
+              Selected: <strong className="text-slate-800">{csvFileName}</strong>
+            </span>
+          ) : null}
+          <button
+            type="button"
+            disabled={
+              !csvReady ||
+              Boolean(midSeasonBlockedReason) ||
+              midBusy ||
+              !isFirebaseConfigured()
+            }
+            onClick={() => void applyMidSeasonCsv()}
+            className="rounded-xl bg-gradient-to-r from-cyan-700 to-teal-700 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow disabled:cursor-not-allowed disabled:opacity-50"
+          >
+            {midBusy ? "Applying…" : "Apply import to Firestore"}
+          </button>
+        </div>
+        {csvReady && !midSeasonBlockedReason && (
+          <p className="mt-2 text-xs text-emerald-700">
+            CSV is valid: 105 players, 7 franchises. Click <strong>Apply import</strong> to write.
+          </p>
+        )}
+        {csvErrors && csvErrors.length > 0 && (
+          <ul className="mt-3 max-h-48 list-inside list-disc overflow-y-auto rounded-lg border border-red-300/50 bg-red-950/30 p-2 text-left text-[11px] text-red-900">
+            {csvErrors.map((err, i) => (
+              <li key={i}>{err}</li>
+            ))}
+          </ul>
+        )}
+        {midFeedback && (
+          <p
+            className={
+              midFeedback.kind === "ok"
+                ? "mt-3 text-xs text-emerald-600"
+                : "mt-3 text-xs text-red-600"
+            }
+          >
+            {midFeedback.text}
+          </p>
+        )}
+      </div>
 
       <div className="mt-6 border-t border-amber-300/40 pt-4">
         <label className="flex cursor-pointer items-center gap-2 text-sm font-semibold text-amber-950">
