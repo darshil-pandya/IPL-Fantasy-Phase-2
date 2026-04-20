@@ -1,0 +1,129 @@
+================================================================
+IPL 2026 FANTASY CRICKET POINTS SCORING RULEBOOK
+================================================================
+Version: 1.0
+Reference: IPL 2026 Official Fantasy Points System
+
+----------------------------------------------------------------
+GENERAL RULES
+----------------------------------------------------------------
+- Points are awarded to ANY player who performs the action,
+  regardless of their designated role (batter, bowler,
+  all-rounder, wicket-keeper). A bowler who bats earns batting
+  points. A batter who bowls earns bowling points.
+- There are no captain or vice-captain multipliers.
+- All point categories below apply universally across roles.
+
+----------------------------------------------------------------
+SECTION 1: BATTING POINTS
+----------------------------------------------------------------
+
+ACTION                          POINTS
+------------------------------  -------
+Run scored                        +1 per run
+Boundary (4) bonus                +2
+Six bonus                         +6  (i.e. +1 run + +2 boundary + +4 six bonus)
+Dismissal for a duck              -2
+
+RUN MILESTONE BONUS (only the highest milestone applies):
+  30 runs scored                  +4
+  50 runs scored                  +8   (do NOT also award +4 for 30)
+  75 runs scored                  +12  (do NOT also award +4 or +8 for 30 or 50)
+  100 runs scored                 +16  (do NOT award any lower milestone bonuses)
+
+IMPORTANT NOTES:
+- When a player reaches a milestone (30, 50, 75, or 100 runs),
+  only the single highest applicable bonus is awarded. Lower
+  milestone bonuses are NOT stacked or awarded alongside it.
+- Overthrow runs are credited to the batter on strike at the
+  time of the delivery.
+- If an overthrow reaches the boundary, the batter receives the
+  run points but does NOT receive an additional boundary bonus
+  for those overthrow runs.
+
+----------------------------------------------------------------
+SECTION 2: BOWLING POINTS
+----------------------------------------------------------------
+
+ACTION                          POINTS
+------------------------------  -------
+Dot ball                          +1
+Wicket (excluding run out)        +25
+LBW or Bowled bonus               +8  (awarded in addition to the +25 wicket points)
+3-wicket bonus                    +4
+4-wicket bonus                    +8
+5-wicket bonus                    +16
+Maiden over                       +12
+
+WICKET MILESTONE BONUS NOTES:
+- Wicket milestone bonuses (3, 4, 5 wickets) are independent
+  and cumulative. A bowler taking 5 wickets receives:
+  +4 (3-wicket bonus) + +8 (4-wicket bonus) + +16 (5-wicket bonus).
+
+ECONOMY RATE POINTS (minimum 2 overs bowled required):
+
+ECONOMY RATE (runs per over)    POINTS
+------------------------------  -------
+Below 5.00                        +6
+5.00 to 5.99                      +4
+6.00 to 7.99                      +2
+8.00 to 9.99                       0
+10.00 to 11.00                    -2
+11.01 to 12.00                    -4
+Above 12.00                       -6
+
+----------------------------------------------------------------
+SECTION 3: FIELDING POINTS
+----------------------------------------------------------------
+
+ACTION                          POINTS
+------------------------------  -------
+Catch                             +8
+3-catch bonus                     +4  (flat bonus once 3 or more catches are taken;
+                                       taking 4, 5, or 6 catches still gives only +4)
+Stumping                          +12
+Run out (direct hit)              +12
+Run out (not a direct hit)        +6
+
+RUN OUT NOTES:
+- A direct hit is defined as: the fielder who executes the run
+  out is the only fielder to touch the ball after the batter
+  faces the delivery. The fielder receives +12.
+- For a non-direct-hit run out, points are awarded to the last
+  2 fielders who touched the ball. Each of those 2 fielders
+  receives +6 (not split; each gets the full +6).
+
+----------------------------------------------------------------
+SECTION 4: BATTING STRIKE RATE POINTS
+----------------------------------------------------------------
+Minimum 10 balls faced required. Applies to all players
+EXCEPT bowlers who have not batted.
+
+STRIKE RATE (runs per 100 balls)  POINTS
+--------------------------------  -------
+Above 170                           +6
+150.01 to 170.00                    +4
+130.00 to 150.00                    +2
+70.01 to 129.99                      0
+60.00 to 70.00                      -2
+50.00 to 59.99                      -4
+Below 50.00                         -6
+
+IMPORTANT NOTE:
+- Negative strike rate points apply ONLY when a player's
+  individual strike rate is 70.00 or below.
+- The range 70.01 to 129.99 is a neutral zone worth 0 points.
+
+----------------------------------------------------------------
+SECTION 5: OTHER POINTS
+----------------------------------------------------------------
+
+ACTION                          POINTS
+------------------------------  -------
+Named in announced lineup         +4
+Concussion substitute             +4
+Impact player substitute          +4
+
+================================================================
+END OF RULEBOOK
+================================================================

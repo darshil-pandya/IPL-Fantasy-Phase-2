@@ -1,0 +1,1311 @@
+{
+  "source": "espncricinfo-ipl-2026-squads",
+  "sourceNote": "Merged with scripts/ipl2026_league_sheet.pipe (auction roles/teams/nationality). ESPN cache: scripts/espn_ipl2026_squads.md. Excludes franchise-owned players; players in players.json are omitted except POOL_ALSO_FROM_PLAYERS_JSON (also in waiver catalog).",
+  "players": [
+    {
+      "id": "abdul-samad",
+      "name": "Abdul Samad",
+      "iplTeam": "LSG",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "abhinandan-singh",
+      "name": "Abhinandan Singh",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "adam-milne",
+      "name": "Adam Milne",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ajay-mandal",
+      "name": "Ajay Mandal",
+      "iplTeam": "DC",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "akash-deep",
+      "name": "Akash Deep",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "akash-singh",
+      "name": "Akash Singh",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "akeal-hosein",
+      "name": "Akeal Hosein",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "akshat-raghuwanshi",
+      "name": "Akshat Raghuwanshi",
+      "iplTeam": "LSG",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "am-ghazanfar",
+      "name": "AM Ghazanfar",
+      "iplTeam": "MI",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "aman-khan",
+      "name": "Aman Khan",
+      "iplTeam": "CSK",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "aman-rao",
+      "name": "Aman Rao",
+      "iplTeam": "RR",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "amit-kumar",
+      "name": "Amit Kumar",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "aniket-verma",
+      "name": "Aniket Verma",
+      "iplTeam": "SRH",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "anrich-nortje",
+      "name": "Anrich Nortje",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "anuj-rawat",
+      "name": "Anuj Rawat",
+      "iplTeam": "GT",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "anukul-roy",
+      "name": "Anukul Roy",
+      "iplTeam": "KKR",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "arjun-tendulkar",
+      "name": "Arjun Tendulkar",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "arshad-khan",
+      "name": "Arshad Khan",
+      "iplTeam": "GT",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "arshin-kulkarni",
+      "name": "Arshin Kulkarni",
+      "iplTeam": "LSG",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ashok-sharma",
+      "name": "Ashok Sharma",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ashutosh-sharma",
+      "name": "Ashutosh Sharma",
+      "iplTeam": "DC",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ashwani-kumar",
+      "name": "Ashwani Kumar",
+      "iplTeam": "MI",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "atharva-ankolekar",
+      "name": "Atharva Ankolekar",
+      "iplTeam": "MI",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ben-duckett",
+      "name": "Ben Duckett",
+      "iplTeam": "DC",
+      "role": "WK",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ben-dwarshuis",
+      "name": "Ben Dwarshuis",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "brijesh-sharma",
+      "name": "Brijesh Sharma",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "brydon-carse",
+      "name": "Brydon Carse",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "cooper-connolly",
+      "name": "Cooper Connolly",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "corbin-bosch",
+      "name": "Corbin Bosch",
+      "iplTeam": "MI",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "daksh-kamra",
+      "name": "Daksh Kamra",
+      "iplTeam": "KKR",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "danish-malewar",
+      "name": "Danish Malewar",
+      "iplTeam": "MI",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "dasun-shanaka",
+      "name": "Dasun Shanaka",
+      "iplTeam": "RR",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "david-payne",
+      "name": "David Payne",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "donovan-ferreira",
+      "name": "Donovan Ferreira",
+      "iplTeam": "RR",
+      "role": "WK",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "dushmantha-chameera",
+      "name": "Dushmantha Chameera",
+      "iplTeam": "DC",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "eshan-malinga",
+      "name": "Eshan Malinga",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "gurjapneet-singh",
+      "name": "Gurjapneet Singh",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "gurnoor-brar",
+      "name": "Gurnoor Brar",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "harnoor-singh",
+      "name": "Harnoor Singh",
+      "iplTeam": "PBKS",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "harpreet-brar",
+      "name": "Harpreet Brar",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "harsh-dubey",
+      "name": "Harsh Dubey",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "harshit-rana",
+      "name": "Harshit Rana",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "himmat-singh",
+      "name": "Himmat Singh",
+      "iplTeam": "LSG",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ishant-sharma",
+      "name": "Ishant Sharma",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "jack-edwards",
+      "name": "Jack Edwards",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "jacob-duffy",
+      "name": "Jacob Duffy",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "jayant-yadav",
+      "name": "Jayant Yadav",
+      "iplTeam": "GT",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "jaydev-unadkat",
+      "name": "Jaydev Unadkat",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "jordan-cox",
+      "name": "Jordan Cox",
+      "iplTeam": "RCB",
+      "role": "WK",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kamindu-mendis",
+      "name": "Kamindu Mendis",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kanishk-chouhan",
+      "name": "Kanishk Chouhan",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kartik-tyagi",
+      "name": "Kartik Tyagi",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "karun-nair",
+      "name": "Karun Nair",
+      "iplTeam": "DC",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "krains-fuletra",
+      "name": "Krains Fuletra",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kuldeep-sen",
+      "name": "Kuldeep Sen",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kulwant-khejroliya",
+      "name": "Kulwant Khejroliya",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kumar-kushagra",
+      "name": "Kumar Kushagra",
+      "iplTeam": "GT",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kwena-maphaka",
+      "name": "Kwena Maphaka",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "kyle-jamieson",
+      "name": "Kyle Jamieson",
+      "iplTeam": "DC",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "lhuan-dre-pretorius",
+      "name": "Lhuan-dre Pretorius",
+      "iplTeam": "RR",
+      "role": "BAT",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "lockie-ferguson",
+      "name": "Lockie Ferguson",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "luke-wood",
+      "name": "Luke Wood",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "lungi-ngidi",
+      "name": "Lungi Ngidi",
+      "iplTeam": "DC",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "madhav-tiwari",
+      "name": "Madhav Tiwari",
+      "iplTeam": "DC",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "manav-suthar",
+      "name": "Manav Suthar",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mangesh-yadav",
+      "name": "Mangesh Yadav",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "manimaran-siddharth",
+      "name": "Manimaran Siddharth",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "manish-pandey",
+      "name": "Manish Pandey",
+      "iplTeam": "KKR",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "matthew-breetzke",
+      "name": "Matthew Breetzke",
+      "iplTeam": "LSG",
+      "role": "BAT",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "matthew-short",
+      "name": "Matthew Short",
+      "iplTeam": "CSK",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mayank-markande",
+      "name": "Mayank Markande",
+      "iplTeam": "MI",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mayank-rawat",
+      "name": "Mayank Rawat",
+      "iplTeam": "MI",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mayank-yadav",
+      "name": "Mayank Yadav",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mitchell-owen",
+      "name": "Mitchell Owen",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mitchell-santner",
+      "name": "Mitchell Santner",
+      "iplTeam": "MI",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mohd-izhar",
+      "name": "Mohd Izhar",
+      "iplTeam": "MI",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ms-dhoni",
+      "name": "MS Dhoni",
+      "iplTeam": "CSK",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mukesh-choudhary",
+      "name": "Mukesh Choudhary",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "mukul-choudhary",
+      "name": "Mukul Choudhary",
+      "iplTeam": "LSG",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "musheer-khan",
+      "name": "Musheer Khan",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "naman-tiwari",
+      "name": "Naman Tiwari",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "nandre-burger",
+      "name": "Nandre Burger",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "nathan-ellis",
+      "name": "Nathan Ellis",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "navdeep-saini",
+      "name": "Navdeep Saini",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "nishant-sindhu",
+      "name": "Nishant Sindhu",
+      "iplTeam": "GT",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "nuwan-thushara",
+      "name": "Nuwan Thushara",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "onkar-tarmale",
+      "name": "Onkar Tarmale",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "praful-hinge",
+      "name": "Praful Hinge",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "prashant-solanki",
+      "name": "Prashant Solanki",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "prashant-veer",
+      "name": "Prashant Veer",
+      "iplTeam": "CSK",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "praveen-dubey",
+      "name": "Praveen Dubey",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "prince-yadav",
+      "name": "Prince Yadav",
+      "iplTeam": "LSG",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "prithvi-raj",
+      "name": "Prithvi Raj",
+      "iplTeam": "GT",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "prithvi-shaw",
+      "name": "Prithvi Shaw",
+      "iplTeam": "DC",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "pyla-avinash",
+      "name": "Pyla Avinash",
+      "iplTeam": "PBKS",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "raghu-sharma",
+      "name": "Raghu Sharma",
+      "iplTeam": "MI",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "rahul-chahar",
+      "name": "Rahul Chahar",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "rahul-tripathi",
+      "name": "Rahul Tripathi",
+      "iplTeam": "KKR",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "raj-bawa",
+      "name": "Raj Bawa",
+      "iplTeam": "MI",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ramakrishna-ghosh",
+      "name": "Ramakrishna Ghosh",
+      "iplTeam": "CSK",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ramandeep-singh",
+      "name": "Ramandeep Singh",
+      "iplTeam": "KKR",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "rasikh-salam",
+      "name": "Rasikh Salam",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ravi-singh",
+      "name": "Ravi Singh",
+      "iplTeam": "RR",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "ravichandran-smaran",
+      "name": "Ravichandran Smaran",
+      "iplTeam": "SRH",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "robin-minz",
+      "name": "Robin Minz",
+      "iplTeam": "MI",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "rovman-powell",
+      "name": "Rovman Powell",
+      "iplTeam": "KKR",
+      "role": "BAT",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sahil-parakh",
+      "name": "Sahil Parakh",
+      "iplTeam": "DC",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sakib-hussain",
+      "name": "Sakib Hussain",
+      "iplTeam": "SRH",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "salil-arora",
+      "name": "Salil Arora",
+      "iplTeam": "SRH",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sam-curran",
+      "name": "Sam Curran",
+      "iplTeam": "RR",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sarfaraz-khan",
+      "name": "Sarfaraz Khan",
+      "iplTeam": "CSK",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sarthak-ranjan",
+      "name": "Sarthak Ranjan",
+      "iplTeam": "KKR",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "satvik-deswal",
+      "name": "Satvik Deswal",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "saurabh-dubey",
+      "name": "Saurabh Dubey",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shahbaz-ahmed",
+      "name": "Shahbaz Ahmed",
+      "iplTeam": "LSG",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shahrukh-khan",
+      "name": "M Shahrukh Khan",
+      "iplTeam": "GT",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sherfane-rutherford",
+      "name": "Sherfane Rutherford",
+      "iplTeam": "MI",
+      "role": "BAT",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shivam-mavi",
+      "name": "Shivam Mavi",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shivang-kumar",
+      "name": "Shivang Kumar",
+      "iplTeam": "SRH",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shreyas-gopal",
+      "name": "Shreyas Gopal",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "shubham-dubey",
+      "name": "Shubham Dubey",
+      "iplTeam": "RR",
+      "role": "BAT",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "spencer-johnson",
+      "name": "Spencer Johnson",
+      "iplTeam": "CSK",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "suryansh-shedge",
+      "name": "Suryansh Shedge",
+      "iplTeam": "PBKS",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "sushant-mishra",
+      "name": "Sushant Mishra",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "suyash-sharma",
+      "name": "Suyash Sharma",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "swapnil-singh",
+      "name": "Swapnil Singh",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "t-natarajan",
+      "name": "T Natarajan",
+      "iplTeam": "DC",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "tejasvi-dahiya",
+      "name": "Tejasvi Dahiya",
+      "iplTeam": "KKR",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "tim-david",
+      "name": "Tim David",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "tom-banton",
+      "name": "Tom Banton",
+      "iplTeam": "GT",
+      "role": "WK",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "tripurana-vijay",
+      "name": "Tripurana Vijay",
+      "iplTeam": "DC",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "umran-malik",
+      "name": "Umran Malik",
+      "iplTeam": "KKR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "urvil-patel",
+      "name": "Urvil Patel",
+      "iplTeam": "CSK",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vicky-ostwal",
+      "name": "Vicky Ostwal",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vignesh-puthur",
+      "name": "Vignesh Puthur",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vihaan-malhotra",
+      "name": "Vihaan Malhotra",
+      "iplTeam": "RCB",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vijaykumar-vyshak",
+      "name": "Vijaykumar Vyshak",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vishal-nishad",
+      "name": "Vishal Nishad",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "vishnu-vinod",
+      "name": "Vishnu Vinod",
+      "iplTeam": "PBKS",
+      "role": "WK",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "xavier-bartlett",
+      "name": "Xavier Bartlett",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "yash-dayal",
+      "name": "Yash Dayal",
+      "iplTeam": "RCB",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "yash-raj-punja",
+      "name": "Yash Raj Punja",
+      "iplTeam": "RR",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "yash-thakur",
+      "name": "Yash Thakur",
+      "iplTeam": "PBKS",
+      "role": "BOWL",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "yudhvir-singh",
+      "name": "Yudhvir Singh",
+      "iplTeam": "RR",
+      "role": "AR",
+      "nationality": "IND",
+      "seasonTotal": 0,
+      "byMatch": []
+    },
+    {
+      "id": "zak-foulkes",
+      "name": "Zak Foulkes",
+      "iplTeam": "CSK",
+      "role": "AR",
+      "nationality": "OVS",
+      "seasonTotal": 0,
+      "byMatch": []
+    }
+  ]
+}

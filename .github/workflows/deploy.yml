@@ -1,0 +1,46 @@
+# Deploy static site to GitHub Pages (Project site: /<repo>/)
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install
+      - name: Build
+        run: npm run build
+        env:
+          # Optional: add these in Repo → Settings → Secrets and variables → Actions
+          VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ secrets.VITE_FIREBASE_PROJECT_ID }}
+          # When Firebase secrets are set, prefer Firestore league bundle only (no silent static fallback).
+          # Override via repo variable VITE_LEAGUE_SOURCE if you need `auto` for bootstrap.
+          VITE_LEAGUE_SOURCE: ${{ vars.VITE_LEAGUE_SOURCE || 'firestore' }}
+      # Fails with "Get Pages site failed" until repo Settings → Pages → Source = GitHub Actions
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist/IPL-Fantasy-Phase-2
+      - id: deployment
+        uses: actions/deploy-pages@v4

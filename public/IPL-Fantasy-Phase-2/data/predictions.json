@@ -1,0 +1,60 @@
+{
+  "pointsPerCorrect": 250,
+  "actuals": {
+    "winner": null,
+    "runnerUp": null,
+    "orangeCap": null,
+    "purpleCap": null
+  },
+  "picks": [
+    {
+      "owner": "Bhavya",
+      "winner": "DC",
+      "runnerUp": "GT",
+      "orangeCap": "Ruturaj Gaikwad",
+      "purpleCap": "Aaquib"
+    },
+    {
+      "owner": "Darshil",
+      "winner": "MI",
+      "runnerUp": "RCB",
+      "orangeCap": "Yashasvi Jaiswal",
+      "purpleCap": "Arshdeep Singh"
+    },
+    {
+      "owner": "Hersh",
+      "winner": "MI",
+      "runnerUp": "GT",
+      "orangeCap": "Sanju Samson",
+      "purpleCap": "Arshdeep Singh"
+    },
+    {
+      "owner": "Jash",
+      "winner": "CSK",
+      "runnerUp": "PBKS",
+      "orangeCap": "Abhishek Sharma",
+      "purpleCap": "Matt Henry"
+    },
+    {
+      "owner": "Karan",
+      "winner": "MI",
+      "runnerUp": "SRH",
+      "orangeCap": "Tilak Varma",
+      "purpleCap": "Jasprit Bumrah"
+    },
+    {
+      "owner": "Prajin",
+      "winner": "LSG",
+      "runnerUp": "RCB",
+      "orangeCap": "Shubman Gill",
+      "purpleCap": "Varun Chakravarthy"
+    },
+    {
+      "owner": "Sanket",
+      "winner": "GT",
+      "runnerUp": "MI",
+      "orangeCap": "Abhishek Sharma",
+      "purpleCap": "Yuzvendra Chahal"
+    }
+  ]
+}

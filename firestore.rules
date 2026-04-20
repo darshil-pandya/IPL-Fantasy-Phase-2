@@ -1,0 +1,50 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ── Legacy documents (kept for backward compatibility) ──
+    match /iplFantasy/waiverState {
+      allow read, write: if true;
+    }
+    match /iplFantasy/leagueBundle {
+      allow read, write: if true;
+    }
+    match /iplFantasy/fantasyMatchScores {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // ── New collections (client reads; Cloud Functions write via Admin SDK) ──
+    match /players/{playerId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /owners/{ownerId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /ownershipPeriods/{periodId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /matchPlayerPoints/{recordId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /waiverNominations/{nominationId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /waiverBids/{bidId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /appSettings/{docId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /completedTransfers/{transferId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

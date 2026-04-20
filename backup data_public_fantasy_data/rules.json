@@ -1,0 +1,110 @@
+{
+  "teamComposition": {
+    "title": "Team composition, auction & league rules",
+    "bullets": [
+      "League: 7 franchises. Entry fee per franchise: Rs. 10,000 (see rulebook for winnings / payouts by rank).",
+      "Squad size: 15 players per fantasy franchise.",
+      "Maximum 3 players from the same real IPL franchise in your fantasy squad.",
+      "Minimum position mix: at least 4 batsmen or wicket-keepers (combined), at least 3 bowlers, at least 2 all-rounders; 6 flex spots (any position).",
+      "No captains or vice-captains. All 15 players earn fantasy points when they are in your playing XI on a match day.",
+      "Maximum 7 overseas (OVS) players in the squad.",
+      "Auction: total budget Rs. 10,00,000 per team. Bids must increase in multiples of Rs. 10,000. Each team must keep enough budget to complete the squad at Rs. 10,000 minimum per remaining slot (e.g. first pick cannot leave less than Rs. 1,40,000 for 14 players). Moderator's call on the winning bid is final.",
+      "Nomination order is random; player pool is about 130-140, then undrafted players can be nominated cyclically for open slots.",
+      "Roster limits apply while nominating and bidding (e.g. cannot bid if you already have 3 players from that IPL team). Unused auction budget does not carry to the waiver budget.",
+      "Pre-season predictor: each franchise submits winner, runner-up, Purple Cap, Orange Cap; 250 points per correct pick (deadline per commissioner).",
+      "Waivers: secret bid system; waiver budget Rs. 2,50,000. Nomination window Monday 12:00 am IST to Saturday 10:00 am IST; bidding deadline Sunday 10:00 am IST (see rulebook). Minimum bid Rs. 5,000 (multiples of Rs. 5,000). Requests must name the player going out; team composition rules still apply.",
+      "Trades allowed if squads stay valid. Submit before midnight to count for the next day's matches. Waiver budget cannot fund trades. Collusion: if 3 of 5 non-involved franchises vote against a trade, it is reversed.",
+      "No fantasy points for abandoned matches."
+    ]
+  },
+  "scoring": {
+    "title": "Fantasy points — IPL 2026 scoring system",
+    "sections": [
+      {
+        "heading": "Batting",
+        "rows": [
+          { "action": "Run scored", "points": "+1 per run" },
+          { "action": "Boundary bonus (four)", "points": "+2" },
+          { "action": "Six bonus", "points": "+4" },
+          { "action": "25-run bonus", "points": "+4" },
+          { "action": "Half-century bonus", "points": "+8" },
+          { "action": "75-run bonus", "points": "+12" },
+          { "action": "Century bonus", "points": "+16" },
+          { "action": "Dismissal for a duck (BAT, WK, AR only)", "points": "-2" }
+        ]
+      },
+      {
+        "heading": "Batting — clarifications",
+        "rows": [
+          { "action": "Century stacking", "points": "If a batter scores a century, only the century bonus counts — not the 25-run, half-century, or 75-run bonuses." },
+          { "action": "Overthrow runs", "points": "Runs from an overthrow count for the striker; if the overthrow goes for a boundary, no extra boundary bonus for that boundary." }
+        ]
+      },
+      {
+        "heading": "Bowling",
+        "rows": [
+          { "action": "Dot ball", "points": "+1" },
+          { "action": "Wicket (excluding run out)", "points": "+25" },
+          { "action": "Bonus for LBW or bowled", "points": "+8" },
+          { "action": "3-wicket haul bonus", "points": "+4" },
+          { "action": "4-wicket haul bonus", "points": "+8" },
+          { "action": "5-wicket haul bonus", "points": "+16" },
+          { "action": "Maiden over", "points": "+12" }
+        ]
+      },
+      {
+        "heading": "Fielding",
+        "rows": [
+          { "action": "Catch", "points": "+8" },
+          { "action": "3-catch bonus (once, even if more than 3 catches)", "points": "+4" },
+          { "action": "Stumping", "points": "+12" },
+          { "action": "Run out — direct hit", "points": "+12" },
+          { "action": "Run out — not a direct hit", "points": "+6" }
+        ]
+      },
+      {
+        "heading": "Fielding — clarifications",
+        "rows": [
+          { "action": "Direct hit", "points": "Only the fielder who alone touches the ball after the batter faces the delivery. Otherwise points go to the last two fielders who touch the ball." },
+          { "action": "3-catch bonus", "points": "Example: 6 catches still earns only one +4 bonus, not 8." }
+        ]
+      },
+      {
+        "heading": "Other",
+        "rows": [
+          { "action": "Named in announced XI", "points": "+4" },
+          { "action": "Concussion substitute or Impact Player appearance", "points": "+4" }
+        ]
+      },
+      {
+        "heading": "Economy rate (min. 2 overs bowled)",
+        "rows": [
+          { "action": "Below 5 runs per over", "points": "+6" },
+          { "action": "Between 5 and 5.99 rpo", "points": "+4" },
+          { "action": "Between 6 and 7 rpo", "points": "+2" },
+          { "action": "Between 10 and 11 rpo", "points": "-2" },
+          { "action": "Between 11.01 and 12 rpo", "points": "-4" },
+          { "action": "Above 12 rpo", "points": "-6" }
+        ]
+      },
+      {
+        "heading": "Strike rate — batters, WK, AR (min. 10 balls faced; not bowlers)",
+        "rows": [
+          { "action": "Strike rate above 170 (per 100 balls)", "points": "+6" },
+          { "action": "Between 150.01 and 170", "points": "+4" },
+          { "action": "Between 130 and 150", "points": "+2" },
+          { "action": "Between 60 and 70", "points": "-2" },
+          { "action": "Between 50 and 59.99", "points": "-4" },
+          { "action": "Below 50", "points": "-6" }
+        ]
+      },
+      {
+        "heading": "Strike rate — clarification",
+        "rows": [
+          { "action": "Negative SR points", "points": "Low strike-rate penalties apply only when individual SR is 70 or below (per 100 balls)." }
+        ]
+      }
+    ],
+    "footer": "After each IPL match, use Cricbuzz (or official stats) to apply these rules per player, then update byMatch and seasonTotal in players.json. The economy table has no band listed between 7 and 10 rpo — treat that range as 0 bonus unless your league agrees otherwise."
+  }
+}

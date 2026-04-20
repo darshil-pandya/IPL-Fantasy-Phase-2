@@ -1,0 +1,13 @@
+# Local secrets — never commit
+docs/Reference/CricAPI Key.txt
+cricapi-dump-temp.txt
+cricapi-dump*.txt
+
+node_modules
+dist
+.cursor/
+preview-embed.json
+*.local
+.DS_Store
+__pycache__/
+*.pyc

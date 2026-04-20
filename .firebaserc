@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "ipl-fantasy-phase-2",
+    "ipl-fantasy-live": "ipl-fantasy-phase-2"
+  },
+  "targets": {},
+  "etags": {}
+}

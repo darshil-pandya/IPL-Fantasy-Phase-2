@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>IPL Fantasy — UI preview (offline)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["DM Sans", "ui-sans-serif", "system-ui", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        background: #020617;
+      }
+    </style>
+  </head>
+  <body class="min-h-dvh bg-slate-950 pb-24 font-sans text-slate-100 antialiased md:pb-8">
+    <div
+      class="border-b border-amber-900/40 bg-amber-950/30 px-3 py-2 text-center text-xs text-amber-100/90 md:text-sm"
+    >
+      <strong>Offline UI preview</strong> — same screens as the React app. Data is embedded;
+      open this file in any browser (double-click). For production use the Vite build / GitHub Pages
+      site.
+    </div>
+    <div class="mx-auto max-w-5xl px-3 pt-4 md:px-6">
+      <header class="mb-4 flex flex-col gap-3 border-b border-slate-800 pb-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-xs font-medium uppercase tracking-widest text-amber-400/90">Franchise league</p>
+          <h1 class="text-2xl font-bold tracking-tight text-white md:text-3xl">IPL Fantasy</h1>
+        </div>
+        <nav class="hidden flex-wrap justify-end gap-1 md:flex" id="nav-top" aria-label="Main"></nav>
+      </header>
+      <main id="view" class="min-h-[50vh]"></main>
+    </div>
+    <div
+      class="fixed inset-x-0 bottom-0 z-20 border-t border-slate-800 bg-slate-950/95 px-1 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur-md md:hidden"
+      id="nav-bottom"
+      aria-label="Main mobile"
+    ></div>

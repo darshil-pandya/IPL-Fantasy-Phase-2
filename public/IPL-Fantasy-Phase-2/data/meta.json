@@ -1,0 +1,6 @@
+{
+  "seasonLabel": "IPL 2026",
+  "lastPointsUpdate": null,
+  "pointsUpdateNote": "Replace with an ISO date when you publish points. Use Cricbuzz scorecards to apply your scoring rules, then edit players.json.",
+  "cricbuzzBaseUrl": "https://www.cricbuzz.com/cricket-match/live-scores"
+}
