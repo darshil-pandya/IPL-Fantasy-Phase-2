@@ -643,10 +643,14 @@ export async function handleSetWaiverPhase(
   }
 
   const batch = db.batch();
-  batch.update(db.doc("appSettings/league"), {
-    waiverPhase: targetPhase,
-    isWaiverWindowOpen,
-  });
+  batch.set(
+    db.doc("appSettings/league"),
+    {
+      waiverPhase: targetPhase,
+      isWaiverWindowOpen,
+    },
+    { merge: true },
+  );
   batch.set(
     waiverRef,
     {

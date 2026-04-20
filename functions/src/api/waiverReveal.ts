@@ -160,12 +160,27 @@ export async function handleWaiverCommitReveal(
     { merge: true },
   );
 
-  batch.update(db.doc(APP_SETTINGS_DOC), {
-    waiverPhase: "idle",
-    isWaiverWindowOpen: false,
-  });
+  // Use merge set — `update` fails with NOT_FOUND if appSettings/league was never created
+  // (e.g. league written via mid-season CSV without running migration first).
+  batch.set(
+    db.doc(APP_SETTINGS_DOC),
+    {
+      waiverPhase: "idle",
+      isWaiverWindowOpen: false,
+    },
+    { merge: true },
+  );
 
-  await batch.commit();
+  try {
+    await batch.commit();
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    console.error("waiverCommitReveal: batch.commit failed", e);
+    throw new HttpsError(
+      "failed-precondition",
+      `Could not save reveal results: ${msg}`,
+    );
+  }
 
   return {
     ok: true,
