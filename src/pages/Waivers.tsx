@@ -53,6 +53,20 @@ function formatDate(iso: string): string {
   }
 }
 
+/** Firebase callable / HttpsError often expose `code` + `message`; surface both in the UI. */
+function formatCallableError(e: unknown): string {
+  if (e && typeof e === "object") {
+    const o = e as { message?: unknown; code?: unknown };
+    const code = typeof o.code === "string" ? o.code : "";
+    const msg = typeof o.message === "string" ? o.message : "";
+    if (code && msg) return `${code}: ${msg}`;
+    if (msg) return msg;
+    if (code) return code;
+  }
+  if (e instanceof Error) return e.message;
+  return String(e);
+}
+
 function BidToast({
   toast,
 }: {
@@ -199,10 +213,7 @@ export function Waivers() {
       try {
         await cloud.commitReveal();
       } catch (e: unknown) {
-        const msg =
-          e && typeof e === "object" && "message" in e
-            ? String((e as { message: unknown }).message)
-            : String(e);
+        const msg = formatCallableError(e);
         setActionErr(msg || "Reveal failed.");
       }
       return;
@@ -718,6 +729,11 @@ function AdminPanel({
           {pubBusy ? "Publishing…" : "Publish league to Firestore"}
         </button>
       </div>
+      {error && (
+        <p className="mt-3 text-sm text-red-600" role="alert">
+          {error}
+        </p>
+      )}
       {!isFirebaseConfigured() && (
         <p className="mt-3 text-xs leading-relaxed text-amber-200/90">
           <strong className="font-medium text-amber-300">Publish is disabled.</strong> This
@@ -964,7 +980,6 @@ function AdminPanel({
         </div>
       ) : null}
 
-      {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
       <p className="mt-3 text-xs text-slate-500">
         Flow: idle → active (nominations + bidding) → reveal → idle. With Firestore enabled,
         reveal runs on the server so{" "}
