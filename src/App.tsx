@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ErrorState } from "./components/ErrorState";
+import { FirestoreEmptyLeague } from "./components/FirestoreEmptyLeague";
 import { Layout } from "./components/Layout";
 import { LoadingState } from "./components/LoadingState";
 import { LeagueProvider, useLeague } from "./context/LeagueContext";
@@ -20,10 +21,21 @@ function routerBasename(): string {
   return b === "" ? "/" : b;
 }
 
+function isFirestoreLeagueMissingError(message: string | null): boolean {
+  return (
+    !!message &&
+    message.includes("No league data in Firestore") &&
+    message.includes("leagueBundle")
+  );
+}
+
 function DataRoutes() {
   const { loading, error, refresh, bundle } = useLeague();
 
   if (loading) return <LoadingState />;
+  if (error && isFirestoreLeagueMissingError(error)) {
+    return <FirestoreEmptyLeague onRetry={() => void refresh()} />;
+  }
   if (error)
     return (
       <div className="mx-auto max-w-lg px-4 pt-16">
